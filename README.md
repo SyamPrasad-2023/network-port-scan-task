@@ -10,12 +10,12 @@ Discover devices and open ports on the local network to assess possible exposure
 
 ## 📝 What I Did
 1. Installed Nmap
-2. Identified my local IP and subnet (`192.168.1.0/24`)
+2. Identified my local IP and subnet (`192.168.1.0/24`) using IPconfig command in Command Prompt.
 3. Scanned the network for live devices: nmap -sS 192.168.1.0/24
 4. Scanned my own device to check open ports: nmap -sV 192.168.1.35
 5. Analyzed the open ports and services
 6. Took notes on security risks
-7. Saved scan results as `.txt` files
+7. Saved scan results as `.xml` files
 
 ## 📎 Files Included
 - `scan_results/full_scan.txt` - Scan of entire subnet
