@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?><nmaprun args="nmap -p 1-655** -T4 -A -v 192.168.1.**" profile_name="Intense scan, all TCP ports" scanner="nmap" start="1758540251" startstr="Mon Sep 22 16:54:11 2025" version="7.98" xmloutputversion="1.04"><scaninfo type="syn" protocol="tcp" numservices="655**" services="1-655**"></scaninfo><verbose level="1"></verbose><debugging level="0"></debugging><output type="interactive">Starting Nmap 7.98 ( https://nmap.org ) at 2025-09-22 16:54 +0530
+NSE: Loaded 158 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+Initiating NSE at 16:54
+Completed NSE at 16:54, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 16:54
+Completed Parallel DNS resolution of 1 host. at 16:54, 0.51s elapsed
+Initiating SYN Stealth Scan at 16:54
+Scanning 192.168.1.** [655** ports]
+Discovered open port 8080/tcp on 192.168.1.**
+Discovered open port 445/tcp on 192.168.1.**
+Discovered open port 139/tcp on 192.168.1.**
+Discovered open port 1**/tcp on 192.168.1.**
+Discovered open port 7070/tcp on 192.168.1.**
+Discovered open port 49669/tcp on 192.168.1.**
+Discovered open port 1880/tcp on 192.168.1.**
+Discovered open port 49668/tcp on 192.168.1.**
+Discovered open port 7680/tcp on 192.168.1.**
+Discovered open port 1521/tcp on 192.168.1.**
+Discovered open port 5040/tcp on 192.168.1.**
+Discovered open port 49686/tcp on 192.168.1.**
+Discovered open port 49678/tcp on 192.168.1.**
+Discovered open port 49672/tcp on 192.168.1.**
+Discovered open port 49664/tcp on 192.168.1.**
+Discovered open port 49665/tcp on 192.168.1.**
+Completed SYN Stealth Scan at 16:54, 2.74s elapsed (655** total ports)
+Initiating Service scan at 16:54
+Scanning 16 services on 192.168.1.**
+Service scan Timing: About 50.00% done; ETC: 16:55 (0:00:42 remaining)
+Completed Service scan at 16:56, 116.25s elapsed (16 services on 1 host)
+Initiating OS detection (try #1) against 192.168.1.**
+Retrying OS detection (try #2) against 192.168.1.**
+Retrying OS detection (try #3) against 192.168.1.**
+Retrying OS detection (try #4) against 192.168.1.**
+Retrying OS detection (try #5) against 192.168.1.**
+NSE: Script scanning 192.168.1.**.
+Initiating NSE at 16:56
+Completed NSE at 16:56, 14.29s elapsed
+Initiating NSE at 16:56
+Completed NSE at 16:56, 0.15s elapsed
+Initiating NSE at 16:56
+Completed NSE at 16:56, 0.00s elapsed
+Nmap scan report for 192.168.1.**
+Host is up (0.00014s latency).
+Not shown: 65518 closed tcp ports (reset)
+PORT      STATE    SERVICE         VERSION
+1**/tcp   open     msrpc           Microsoft Windows RPC
+137/tcp   filtered netbios-ns
+139/tcp   open     netbios-ssn     Microsoft Windows netbios-ssn
+445/tcp   open     microsoft-ds?
+1521/tcp  open     oracle-tns      Oracle TNS Listener 10.2.0.1.0 (for 32-bit Windows)
+1880/tcp  open     http            Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Job Service - DESKTOP-5QPV2SN
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-favicon: Unknown favicon MD5: B67397D6D0F85FCFD1FC5C2929651FC2
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+5040/tcp  open     unknown
+7070/tcp  open     ssl/realserver?
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=AnyDesk Client
+| Issuer: commonName=AnyDesk Client
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-08-17T12:28:42
+| Not valid after:  2073-08-04T12:28:42
+| MD5:     979d 0c65 b3b0 0e92 0f7d b2c2 3649 f4c0
+| SHA-1:   9c02 154c b472 0575 6021 c426 1d6a b2e0 f90d ca7d
+|_SHA-256: 01d4 fdb5 3be0 0b6c 6e36 d5ea bf17 1d24 b0f7 3474 6166 e207 5e4e 763a 905c 648c
+7680/tcp  open     pando-pub?
+8080/tcp  open     http            Oracle XML DB Enterprise Edition httpd
+|_http-generator: Oracle DARB XHTML Converter - Version 4.5.2 Build 28
+|_http-title: ORACLE DATABASE 10g EXPRESS EDITION LICENSE AGREEMENT Letter-S...
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: Oracle XML DB/Oracle Database
+49664/tcp open     msrpc           Microsoft Windows RPC
+49665/tcp open     msrpc           Microsoft Windows RPC
+49668/tcp open     msrpc           Microsoft Windows RPC
+49669/tcp open     msrpc           Microsoft Windows RPC
+49672/tcp open     msrpc           Microsoft Windows RPC
+49678/tcp open     oracle          Oracle Database
+49686/tcp open     msrpc           Microsoft Windows RPC
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.98%E=4%D=9/22%OT=1**%CT=1%CU=39789%PV=Y%DS=0%DC=L%G=Y%TM=68D132
+OS:6B%P=i686-pc-windows-windows)SEQ(SP=102%GCD=1%ISR=108%TI=I%CI=I%II=I%SS=
+OS:S%TS=A)SEQ(SP=103%GCD=1%ISR=10A%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=104%GCD=
+OS:1%ISR=109%TI=I%CI=I%II=I%SS=S%TS=A)SEQ(SP=106%GCD=1%ISR=107%TI=I%CI=I%II
+OS:=I%SS=S%TS=A)SEQ(SP=FD%GCD=1%ISR=10E%TI=I%CI=I%II=I%SS=S%TS=A)OPS(O1=MFF
+OS:D7NW8ST11%O2=MFFD7NW8ST11%O3=MFFD7NW8NNT11%O4=MFFD7NW8ST11%O5=MFFD7NW8ST
+OS:11%O6=MFFD7ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)ECN(
+OS:R=Y%DF=Y%T=80%W=FFFF%O=MFFD7NW8NNS%CC=N%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%
+OS:W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)
+OS:T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A
+OS:=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D
+OS:F=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=Z%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=8
+OS:0%CD=Z)
+
+Uptime guess: 0.0** days (since Mon Sep 22 16:05:44 2025)
+Network Distance: 0 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2025-09-22T11:26:25
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+
+NSE: Script Post-scanning.
+Initiating NSE at 16:56
+Completed NSE at 16:56, 0.00s elapsed
+Initiating NSE at 16:56
+Completed NSE at 16:56, 0.00s elapsed
+Initiating NSE at 16:56
+Completed NSE at 16:56, 0.00s elapsed
+Read data files from: C:\Program Files (x86)\Nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 144.56 seconds
+           Raw packets sent: 65614 (2.891MB) | Rcvd: 131288 (5.521MB)
+</output><host comment=""><status state="up"></status><address addr="192.168.1.**" vendor="" addrtype="ipv4"></address><hostnames></hostnames><ports><extraports count="65518" state="closed"></extraports><port portid="1**" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="137" protocol="tcp"><state state="filtered" reason="no-response" reason_ttl="0"></state><service conf="3" method="table" name="netbios-ns"></service></port><port portid="139" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="netbios-ssn" product="Microsoft Windows netbios-ssn"></service></port><port portid="445" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="microsoft-ds"></service></port><port portid="1521" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="oracle-tns" product="Oracle TNS Listener" version="10.2.0.1.0" extrainfo="for 32-bit Windows"></service></port><port portid="1880" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP"></service></port><port portid="5040" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service></service></port><port portid="7070" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="realserver"></service></port><port portid="7680" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="3" method="table" name="pando-pub"></service></port><port portid="8080" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="http" product="Oracle XML DB Enterprise Edition httpd"></service></port><port portid="49664" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49665" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49668" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49669" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49672" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port><port portid="49678" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="oracle" product="Oracle Database"></service></port><port portid="49686" protocol="tcp"><state state="open" reason="syn-ack" reason_ttl="128"></state><service conf="10" method="probed" name="msrpc" product="Microsoft Windows RPC"></service></port></ports><os><portused state="open" proto="tcp" portid="1**"></portused><portused state="closed" proto="tcp" portid="1"></portused><portused state="closed" proto="udp" portid="39789"></portused><osmatch name="Microsoft Windows 10 1607 - 11 23H2" accuracy="99" line="74791"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="99"></osclass></osmatch><osmatch name="Microsoft Windows 10 1511" accuracy="97" line="74530"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="97"></osclass></osmatch><osmatch name="Windows 11 21H2" accuracy="97" line="75587"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="97"></osclass></osmatch><osmatch name="Windows Server 2022" accuracy="97" line="82130"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="2022" accuracy="97"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703" accuracy="96" line="74847"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="96"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703 or Windows 11 21H2" accuracy="96" line="74943"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="96"></osclass></osmatch><osmatch name="Microsoft Windows 10 1703 - 11 21H2" accuracy="95" line="74920"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="95"></osclass></osmatch><osmatch name="Microsoft Windows 11 21H2" accuracy="95" line="75569"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="11" accuracy="95"></osclass></osmatch><osmatch name="Microsoft Windows 7 or 8.1 R1" accuracy="94" line="82755"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="8.1" accuracy="94"></osclass></osmatch><osmatch name="Microsoft Windows 10 1607" accuracy="94" line="74626"><osclass vendor="Microsoft" osfamily="Windows" type="general purpose" osgen="10" accuracy="94"></osclass></osmatch></os><uptime seconds="3051" lastboot="Mon Sep 22 16:05:44 2025"></uptime><tcpsequence index="262" difficulty="Good luck!" values="83E9AE70,E1436341,DF9F50DC,B928185F,2C6090FD,3F36FC57"></tcpsequence><ipidsequence class="Incremental" values="6833,68**,6837,6839,683B,683D"></ipidsequence><tcptssequence class="1000HZ" values="2E55E5,2E5655,2E56C4,2E5734,2E57A3,2E5812"></tcptssequence></host><runstats><finished time="1758540395" timestr="Mon Sep 22 16:56:** 2025"></finished><hosts up="1" down="0" total="1"></hosts></runstats></nmaprun>
